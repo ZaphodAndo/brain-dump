@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Inter";
+  src: local(Inter) url("/fonts/Inter-VariableFont_slnt\,wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "Fredoka";
+  src: url("/fonts/Fredoka-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
+:root {
+  /* Fonts */
+  --primary-font: "Fredoka", sans-serif;
+  --secondary-font: "Inter", "Segoe UI", -apple-system, BlinkMacSystemFont,
+    "Fira Sans", "Helvetica Neue", sans-serif;
+
+  /* Colours */
+  --primary-colour: hsla(194, 65%, 81%, 1);
+  --secondary-colour: hsla(62, 58%, 92%, 1);
+  --accent-colour: hsla(352, 100%, 66%, 1);
+  --text-colour: hsla(0, 0%, 0%, 1);
+}
+
+html {
+  background-color: var(--primary-colour);
+  font-family: var(--primary-font);
+  color: var(--text-colour);
+}
+
+body {
+  margin: unset;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
