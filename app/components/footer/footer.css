@@ -1,0 +1,51 @@
+footer {
+  border-top: 2px dashed hsla(0, 0%, 0%, 0.1);
+  padding: 63px 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: var(--text-colour);
+}
+
+.links a:hover {
+  text-decoration: underline dashed;
+  color: var(--accent-colour);
+}
+
+.copyright-text {
+  text-align: center;
+  margin: unset;
+}
+
+.settings-button {
+  background-color: unset;
+  border: unset;
+  width: fit-content;
+  height: fit-content;
+  margin: auto 0 auto auto;
+  font-family: var(--secondary-font);
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 15px;
+  cursor: pointer;
+}
+
+.settings-button:hover {
+  text-decoration: underline dashed;
+  color: var(--accent-colour);
+}

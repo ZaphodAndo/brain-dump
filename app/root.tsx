@@ -1,4 +1,3 @@
-import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction } from "@remix-run/node";
 import {
   Links,
@@ -8,10 +7,16 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+import Footer from "./components/footer/footer";
+import footerStyles from "./components/footer/footer.css";
+import globalStyles from "./styles/global.css";
 
-export const links: LinksFunction = () => [
-  ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
-];
+export const links: LinksFunction = () => {
+  return [
+    { rel: "stylesheet", href: globalStyles },
+    { rel: "stylesheet", href: footerStyles },
+  ];
+};
 
 export default function App() {
   return (
@@ -27,6 +32,7 @@ export default function App() {
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
+        <Footer />
       </body>
     </html>
   );
