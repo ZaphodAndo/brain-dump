@@ -26,9 +26,15 @@ class StorageService {
     return null;
   }
 
-  createNote(title = "", content = "") {
+  createNote(title = "", content = "", tags = [], emoji = "🦀") {
     let notes = this.getNotes();
-    const note = { id: crypto.randomUUID(), title: title, content: content };
+    const note = {
+      id: crypto.randomUUID(),
+      title: title,
+      content: content,
+      tags: tags,
+      emoji: emoji,
+    };
 
     if (notes) {
       notes.push(note);
