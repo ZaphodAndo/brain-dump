@@ -12,11 +12,20 @@ export default function Index() {
   const noteId = useLoaderData<string>();
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [tags, setTags] = useState<Array<string>>([]);
+  const [emoji, setEmoji] = useState("");
   const navigate = useNavigate();
 
   const save = (e: FormEvent) => {
     e.preventDefault();
-    const note = { id: noteId, title: title, content: content };
+    const note = {
+      id: noteId,
+      title: title,
+      content: content,
+      tags: tags,
+      emoji: emoji,
+    };
+
     StorageService.editNote(note);
     navigate(`/note/${noteId}`);
   };
@@ -26,6 +35,8 @@ export default function Index() {
     if (note) {
       setTitle(note.title);
       setContent(note.content);
+      setTags(note.tags);
+      setEmoji(note.emoji);
     }
   }, [noteId]);
 

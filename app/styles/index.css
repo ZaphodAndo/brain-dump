@@ -1,0 +1,154 @@
+main {
+  margin: 0px auto auto auto;
+  min-width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: var(--accent-colour);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 77px;
+  margin: 100px 0 40px 0;
+}
+
+.controls {
+  display: flex;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: var(--secondary-colour);
+  padding: 8px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.search-input input {
+  border: unset;
+  background: unset;
+  color: var(--text-colour);
+  margin-left: 10px;
+  width: 100%;
+}
+
+.search-input input::placeholder {
+  color: var(--text-colour);
+  font-family: var(--primary-font);
+  font-size: 0.75rem;
+}
+
+.create-button {
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: unset;
+  background-color: var(--secondary-colour);
+  font-family: var(--primary-font);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.create-button svg {
+  margin-right: 4px;
+}
+
+.create-button span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 22.4px;
+}
+
+.create-button span::before {
+  content: "";
+  margin-bottom: -0.6023em;
+  display: table;
+}
+
+.create-button span::after {
+  content: "";
+  margin-top: -0.5643em;
+  display: table;
+}
+
+.notes {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.card {
+  background-color: var(--secondary-colour);
+  border-radius: 10px;
+  border: 4px solid var(--accent-colour);
+  padding: 20px;
+}
+
+.card .top-row {
+  display: flex;
+}
+
+.card .top-row a {
+  text-decoration: none;
+  color: var(--text-colour);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 38px;
+}
+
+.card .top-row span {
+  margin: 0 0 0 auto;
+  font-size: 1.25rem;
+  line-height: 38px;
+}
+
+.card .top-row a::before,
+.card .top-row span::before {
+  content: "";
+  margin-bottom: -0.619em;
+  display: table;
+}
+
+.card .top-row a::after,
+.card .top-row span::after {
+  content: "";
+  margin-top: -0.581em;
+  display: table;
+}
+
+.card .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.card .tags p {
+  margin: unset;
+  background-color: var(--primary-colour);
+  padding: 8px;
+  border-radius: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 22.4px;
+}
+
+.card .tags p::before {
+  content: "";
+  margin-bottom: -0.6023em;
+  display: table;
+}
+
+.card .tags p::after {
+  content: "";
+  margin-top: -0.5643em;
+  display: table;
+}
