@@ -26,7 +26,7 @@ class StorageService {
     return null;
   }
 
-  createNote(title = "", content = "", tags = [], emoji = "🦀") {
+  createNote(title: string, content: string, tags: Array<string> = [], emoji: string = "🦀") {
     let notes = this.getNotes();
     const note = {
       id: crypto.randomUUID(),
