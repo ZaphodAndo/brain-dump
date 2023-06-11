@@ -34,3 +34,8 @@ body {
   display: grid;
   grid-template-rows: 1fr auto;
 }
+
+input::placeholder,
+textarea::placeholder {
+  font-family: var(--primary-font);
+}

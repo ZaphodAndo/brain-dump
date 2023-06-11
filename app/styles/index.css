@@ -44,12 +44,14 @@ h1 {
   padding: 12px 10px;
   border-radius: 10px;
   border: unset;
+  color: var(--text-colour);
   background-color: var(--secondary-colour);
   font-family: var(--primary-font);
   cursor: pointer;
   display: flex;
   align-items: center;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 .create-button svg {
